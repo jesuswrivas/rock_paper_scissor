@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 16px;
+
+
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 1, 30);
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2em;
+    border: 2px solid orange;
+    border-radius: 1em;
+}
+
+/* TOP - Button container styling */
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-buttons-button {
+
+    font-size: 1rem;
+    padding: 0.25em 1em;
+    border: 2px solid orange;
+    background-color: rgb(4, 1, 30);
+    color: orange;
+
+}
+
+.container-buttons-button:hover {
+
+    font-size: 1rem;
+    padding: 0.25em 1em;
+    border: 2px solid white;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    transform: translateY(-0.1em);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* BOTTOM - Results container styling */
+
+
+/* BOTTOM/DIVS - Indivitual Result container styling (3divs) */
+
+.container-results {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.container-results-result {
+    color: orange;
+}

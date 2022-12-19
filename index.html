@@ -6,33 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissor!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container-buttons">
-        <button class="container-buttons_rockbutton" id="rock"> Rock</button>
 
-        <button class="container-buttons_paperbutton" id="paper">Paper</button>
+    <main>
+        <h1>Rock, Paper, Scissor!</h1>
 
-        <button class="container-buttons_scissorbutton" id="scissor">Scissor</button>
+
+        <section class="container-buttons">
+            <button data-choice="rock" class="container-buttons-button"> Rock</button>
+
+            <button data-choice="paper" class=" container-buttons-button">Paper</button>
+
+            <button data-choice="scissor" class="container-buttons-button">Scissor</button>
+
+        </section>
+
+
+        <section class="container">
+            <div class="container-results">
+                <h2 class="container-results-title">Player</h2>
+                <span data-choice="rock" class="container-results-result"> 0 </span>
+            </div>
+
+            <div class="container-results">
+                <h2 class="container-results-title">Computer</h2>
+                <span data-choice="paper" class="container-results-result"> 0 </span>
+            </div>
+
+            <div class="container-results">
+                <h2 class="container-results-title">Draws</h2>
+                <span data-choice="scissor" class="container-results-result"> 0 </span>
+            </div>
+        </section>
 
     </main>
-
-
-    <section class="container-results">
-        <h2 class="container-results-title">Player Score</h2>
-        <span class="container-results-result"> 0 </span>
-
-        <h2 class="container-results-title">Computer Score</h2>
-        <span class="container-results-result"> 0 </span>
-
-
-        <h2 class="container-results-title">Draws</h2>
-        <span class="container-results-result"> 0 </span>
-    </section>
-
-
 
     <script src="script.js"> </script>
 </body>

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
+
 }
 
 html {
@@ -50,17 +51,31 @@ main {
 .container-buttons-button {
 
     font-size: 1rem;
-    padding: 0.25em 1em;
+    padding: 5em;
     border: 2px solid orange;
     background-color: rgb(4, 1, 30);
     color: orange;
 
 }
 
+button[data-choice="rock"] {
+    background-image: url("images/rock.png");
+    background-size: cover;
+}
+
+button[data-choice="paper"] {
+    background-image: url("images/paper.png");
+    background-size: cover;
+}
+
+button[data-choice="scissor"] {
+    background-image: url("images/scissor.png");
+    background-size: cover;
+}
+
 .container-buttons-button:hover {
 
     font-size: 1rem;
-    padding: 0.25em 1em;
     border: 2px solid white;
     box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
     transform: translateY(-0.1em);
@@ -69,7 +84,27 @@ main {
 }
 
 
-/* BOTTOM - Results container styling */
+
+/* BOTTOM */
+
+.resetbutton {
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    border: 2px solid orange;
+    background-color: rgb(4, 1, 30);
+    color: orange;
+    cursor: pointer;
+
+}
+
+.resetbutton:hover {
+    font-size: 1rem;
+    border: 2px solid white;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    transform: translateY(-0.1em);
+    color: white;
+    cursor: pointer;
+}
 
 
 /* BOTTOM/DIVS - Indivitual Result container styling (3divs) */
@@ -91,4 +126,8 @@ main {
 
 .container-results-result {
     color: orange;
+}
+
+p {
+    color: white;
 }
